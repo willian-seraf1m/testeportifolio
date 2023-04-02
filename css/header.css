@@ -1,0 +1,31 @@
+header {
+  font-family: 'IBM plex sans', sans-serif;
+  background: #0f62fe;
+}
+
+.logo {
+  max-width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav > li, a {
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav a {
+  padding: 10px;
+}
+

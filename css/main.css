@@ -1,0 +1,120 @@
+.bg-full {
+  background: #0f62fe;
+}
+
+.bg-intro {
+  height: 400px;
+  font-size: 30px;
+  color: #fff;
+  padding: 30px;
+  display: grid;
+}
+
+.arrow {
+  margin: 10px;
+}
+
+.intro-conteudo {
+  align-self: end;
+}
+
+.bg-about {
+  background: #fff;
+  color: #0f62fe;
+  padding: 30px;
+  justify-content: center;
+}
+
+.bg-work {
+  background: #0f62fe;
+  color: #fff;
+  display: grid;
+  padding: 30px;
+}
+
+.text-work {
+  margin-bottom: 40px;
+}
+
+.bg-items {
+  background-color: white;
+  color: #0f62fe;
+  padding: 50px;
+}
+
+.items {
+  padding: 10px;
+}
+
+.items-text {
+  position: relative;
+  text-align: end;
+}
+
+.title-2 {
+  font-family: 'IBM plex sans', sans-serif;
+  font-size: 10px;
+  position: absolute;
+  top: 0px;
+  right: -15px;
+}
+
+.swiper {
+  max-width: 1200px;
+}
+
+.bg-end {
+  height: 400px;
+  font-size: 30px;
+  color: #fff;
+  padding: 30px;
+  display: grid;
+}
+
+.bg-end-conteudo {
+  align-self: center;
+}
+
+
+.footer {
+  font-family: 'IBM plex sans', sans-serif;
+  padding: 10px;
+  background: #0f62fe;
+  color: #fff;
+}
+
+.footer > .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@media (max-width: 680px) {
+  .text-p {
+    font-size: 25px;
+  }
+  .title {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer > .container {
+    display: initial;
+    text-align: center;
+  }
+
+  .footer > p {
+   padding: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .text-p {
+    font-size: 20px;
+  }
+
+  .text-work {
+    margin-bottom: 25px;
+  }
+}

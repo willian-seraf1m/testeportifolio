@@ -1,0 +1,8 @@
+/*definiçoes globais*/
+@import "global.css";
+
+/*estilização header*/
+@import "header.css";
+
+/*estilização das sections*/
+@import "main.css"

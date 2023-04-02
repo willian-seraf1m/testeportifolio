@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+
+  <!--cursor lib-->
+  <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+
+  <!--carousel lib-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header container">
+      <img src="imagens/Logo.svg" alt="logo" class="logo">
+      <nav class="nav">
+        <li><a href="#">item</a></li>
+        <li><a href="#">item</a></li>
+        <li><a href="#">item</a></li>
+      </nav>
+    </div>
+  </header>
+
+  <div class="bg-full">
+    <section class="bg-intro container text-p">
+      <div class="intro-conteudo conteudo">
+        <P class="text-p">Hi, i'm Lucas and <br> currently designing at Mccann Health.</P>
+        <img src="imagens/Arrow.svg" alt="" class="arrow">
+      </div>
+    </section>
+
+    <section class="bg-about">
+      <div class="container">
+        <h1 class="title  ">About me</h1>
+        <p class="text-p">Passionate about creating and reinventing digital experiences, I understand that design is not only a matter of aesthetics, but also of functionality.</p>
+      </div>
+    </section>
+
+    <section class="bg-work">
+      <div class="container">
+        <h1 class="title">What i do</h1>
+        <p class="text-p text-work">I create end-to-end digital solutions through design.</p>
+        <p class="text-p">This includes conducting research, testing, and analysis to understand user needs and behaviors.</p>
+      </div>
+    </section>
+
+    <section class="bg-items">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="items">
+              <span class="title-2">2022</span>
+              <p class="text-p items-text">BTG</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="items">
+              <span class="title-2">2022</span>
+              <p class="text-p items-text">Amazon</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="items">
+              <span class="title-2">2023</span>
+              <p class="text-p items-text">Itaú</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="items">
+              <span class="title-2">2023</span>
+              <p class="text-p items-text">Tembici</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="items">
+              <span class="title-2">2023</span>
+              <p class="text-p items-text">Sanofi</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="items">
+              <span class="title-2">2023</span>
+              <p class="text-p items-text">Nestlé </p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="bg-end container text-p">
+      <div class="bg-end-conteudo">
+        <h1 class="title">Have an idea?</h1>
+        <P class="text-p">Let's talk.</P>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>2023</p>
+      <p>With lots of love and perfectionism - Lucas Carvalho</p>
+      <p>Say Hi</p>
+    </div>
+  </footer>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      mousewheel: true,
+      keyboard: true,
+      breakpoints: {
+        700: {
+          slidesPerView: 5,
+          setWrapperSize: true
+        }
+      }
+    });
+  </script>
+  <script>
+    const cursor = new MouseFollower();
+    const el = document.querySelector('.my-element');
+  </script>
+</body>
+
+</html>
