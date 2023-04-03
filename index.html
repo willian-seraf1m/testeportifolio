@@ -20,13 +20,30 @@
 </head>
 
 <body>
+  <div id="menu">
+    <div class="container-m">
+      <div class="h-menu">
+        <img src="imagens/Logo.svg" alt="logo" class="logo">
+        <button id="btn-close"><img src="imagens/excluir.png" alt="" class="img-menu"></button>
+      </div>
+      <ul class="nav">
+        <li><a href="#">Linkedin</a></li>
+        <li><a href="#">E-mail</a></li>
+        <li><a href="#">Behance</a></li>
+      </ul>
+      <div class="f-menu">
+        <p>2023</p>
+        <p>With lots of love and perfectionism - Lucas Carvalho.</p>
+        <p>Say Hi</p>
+      </div>
+    </div>
+  </div>
+
   <header>
     <div class="header container">
       <img src="imagens/Logo.svg" alt="logo" class="logo">
-      <nav class="nav">
-        <li><a href="#">item</a></li>
-        <li><a href="#">item</a></li>
-        <li><a href="#">item</a></li>
+      <nav id="nav">
+        <button id="btn-open"><img src="imagens/hamburger.png" alt=""></button>
       </nav>
     </div>
   </header>
@@ -113,12 +130,34 @@
   <footer class="footer">
     <div class="container">
       <p>2023</p>
-      <p>With lots of love and perfectionism - Lucas Carvalho</p>
+      <p>With lots of love and perfectionism - Lucas Carvalho.</p>
       <p>Say Hi</p>
     </div>
   </footer>
 
   <script>
+    //menu hamburguer
+    //open menu
+    const btnOpen = document.getElementById('btn-open');
+    const menu = document.getElementById('menu');
+
+    function openMenu() {
+      menu.classList.add('active');
+    }
+
+    btnOpen.addEventListener('click', openMenu);
+
+    //close menu
+    const btnClose = document.getElementById('btn-close');
+
+    function closeMenu() {
+      menu.classList.remove('active');
+    }
+
+    btnClose.addEventListener('click', closeMenu);
+
+
+    //carrossel
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 3,
       spaceBetween: 30,

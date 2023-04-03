@@ -24,3 +24,8 @@
 .conteudo {
   max-width: 700px;
 }
+
+button {
+  background: none;
+  border: none;
+}
