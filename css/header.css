@@ -20,6 +20,10 @@ a {
   color: #fff;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 #menu {
   position: fixed;
   z-index: 249;

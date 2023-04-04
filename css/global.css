@@ -43,8 +43,3 @@ button {
   mix-blend-mode: difference;
   scale: 4;
 }
-
- 
-p:hover ~ .cursor {
-  background: red;
-}
