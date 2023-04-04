@@ -30,7 +30,7 @@ button {
   border: none;
 }
 
-.cursor {
+/*.cursor {
   position: fixed;
   width: 20px;
   height: 20px;
@@ -42,4 +42,4 @@ button {
   pointer-events: none;
   mix-blend-mode: difference;
   scale: 4;
-}
+}*/

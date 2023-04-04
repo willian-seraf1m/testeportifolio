@@ -67,6 +67,7 @@
   height: 400px;
   font-size: 30px;
   color: #fff;
+  background-color: #0f62fe;
   padding: 30px;
   display: grid;
 }
@@ -88,6 +89,35 @@
   justify-content: space-between;
 }
 
+.section-one {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.section-two {
+  position: sticky;
+  top: 0;
+  z-index: 101;
+}
+
+.section-three {
+  position: sticky;
+  top: 0;
+  z-index: 102;
+}
+
+.section-four {
+  position: sticky;
+  top: 0;
+  z-index: 103;
+}
+
+.section-five {
+  position: sticky;
+  top: 0;
+  z-index: 1040;
+}
 
 @media (max-width: 680px) {
   .text-p {
