@@ -29,3 +29,22 @@ button {
   background: none;
   border: none;
 }
+
+.cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  z-index: 250;
+  border-radius: 50%;
+  background: #fff;
+  transition: 0.1s;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  mix-blend-mode: difference;
+  scale: 4;
+}
+
+ 
+p:hover ~ .cursor {
+  background: red;
+}
