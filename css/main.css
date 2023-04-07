@@ -4,10 +4,9 @@
 
 .bg-intro {
   height: 400px;
-  font-size: 30px;
   color: #fff;
-  padding: 30px;
   display: grid;
+  height: calc(100vh - 70px);
 }
 
 .arrow {
@@ -21,7 +20,6 @@
 .bg-about {
   background: #fff;
   color: #0f62fe;
-  padding: 30px;
   justify-content: center;
 }
 
@@ -29,7 +27,6 @@
   background: #0f62fe;
   color: #fff;
   display: grid;
-  padding: 30px;
 }
 
 .text-work {
@@ -39,7 +36,6 @@
 .bg-items {
   background-color: white;
   color: #0f62fe;
-  padding: 50px;
 }
 
 .items {
@@ -68,12 +64,12 @@
   font-size: 30px;
   color: #fff;
   background-color: #0f62fe;
-  padding: 30px;
   display: grid;
 }
 
 .bg-end-conteudo {
   align-self: center;
+  max-width: 1920px;
 }
 
 
@@ -93,53 +89,70 @@
   position: sticky;
   top: 0;
   z-index: 100;
+  padding: 62px;
 }
 
 .section-two {
   position: sticky;
   top: 0;
   z-index: 101;
+  padding: 62px;
 }
 
 .section-three {
   position: sticky;
   top: 0;
   z-index: 102;
+  padding: 62px;
 }
 
 .section-four {
   position: sticky;
   top: 0;
-  z-index: 103;
+  z-index: 200;
+  padding: 62px;
 }
 
 .section-five {
   position: sticky;
   top: 0;
-  z-index: 1040;
+  z-index: 201;
+  padding: 62px;
+}
+
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1920px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
 }
 
 @media (max-width: 680px) {
   .text-p {
-    font-size: 25px;
+    font-size: 32px;
   }
   .title {
-    font-size: 13px;
+    font-size: 16px;
   }
 }
 
 @media (max-width: 550px) {
-  .footer > .container, .f-menu {
-    display: initial;
-    text-align: center;
-  }
-
-  .footer > p {
-   padding: 20px;
+  .footer .text-f {
+    display: none;
   }
 }
 
-@media (max-width: 500px) {
+.section-one, .section-two, .section-three, .section-four, .section-five {
+  padding: 32;
+}
+
+/* @media (max-width: 500px) {
   .text-p {
     font-size: 20px;
   }
@@ -147,4 +160,4 @@
   .text-work {
     margin-bottom: 25px;
   }
-}
+} */

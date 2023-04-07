@@ -24,10 +24,15 @@
         <button id="btn-close"><img src="imagens/excluir.png" alt="" class="img-menu"></button>
       </div>
       <ul class="nav">
-        <li><a href="#">Linkedin</a></li>
-        <li><a href="#">E-mail</a></li>
-        <li><a href="#">Behance</a></li>
+        <li><a href="https://www.linkedin.com/in/lucas-a-carvalho-4682b4177">Linkedin</a></li>
+        <li><a href="mailto:lucass_sc@gmail.com">E-mail</a></li>
+        <li><a href="https://www.behance.net/lucass_sc">Behance</a></li>
+
       </ul>
+      <div class="f-menu">
+        <p>2023</p>
+        <p>Say Hi</p>
+      </div>
     </div>
   </div>
 
@@ -111,7 +116,7 @@
         </div>
     </section>
 
-    <section class="bg-end container text-p section-five  ">
+    <section class="bg-end text-p section-five">
       <div class="bg-end-conteudo">
         <h1 class="title">Have an idea?</h1>
         <P class="text-p">Let's talk.</P>
@@ -122,7 +127,7 @@
   <footer class="footer">
     <div class="container">
       <p>2023</p>
-      <p>With lots of love and perfectionism - Lucas Carvalho.</p>
+      <p class="text-f">With lots of love and perfectionism - Lucas Carvalho.</p>
       <p>Say Hi</p>
     </div>
   </footer>
@@ -155,13 +160,15 @@
       spaceBetween: 30,
       mousewheel: true,
       keyboard: true,
+      loop: true,
       breakpoints: {
         700: {
           slidesPerView: 5,
-          setWrapperSize: true
+          setWrapperSize: true,
         }
-      }
-    });
+    }});
+
+    //cursor
     const cursor = document.querySelector('.cursor');
     document.addEventListener('mousemove', (e) => {
       cursor.style.left = e.clientX + 'px';
