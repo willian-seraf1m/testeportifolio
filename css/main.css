@@ -95,35 +95,38 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  padding: 62px;
 }
 
 .section-two {
   position: sticky;
   top: 0;
   z-index: 101;
-  padding: 62px;
 }
 
 .section-three {
   position: sticky;
   top: 0;
   z-index: 102;
-  padding: 62px;
 }
 
 .section-four {
   position: sticky;
   top: 0;
   z-index: 200;
-  padding: 62px;
 }
 
 .section-five {
   position: sticky;
   top: 0;
   z-index: 201;
-  padding: 248px 62px;
+}
+
+.section-one,
+.section-two,
+.section-three,
+.section-four,
+.section-five {
+ padding: 248px 64px;
 }
 
 @media (max-width: 960px) {
