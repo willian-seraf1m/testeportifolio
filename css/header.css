@@ -46,6 +46,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   padding: 0px 20px;
+  justify-content: space-between;
 }
 
 #menu {
@@ -56,17 +57,11 @@ a:hover {
   display: flex;
 }
 
-.container-m {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .nav {
   list-style: none;
   font-family: 'IBM plex sans', sans-serif;
   font-size: 60px;
-  padding: 62px;
+  padding: 42px;
 }
 
 .h-menu {
@@ -81,4 +76,10 @@ a:hover {
   font-family: 'IBM plex sans', sans-serif;
   color: #fff;
   padding: 10px;
+}
+
+@media (max-width: 550px) {
+  .nav {
+    padding: 12px;
+  }
 }

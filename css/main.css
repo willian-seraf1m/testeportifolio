@@ -71,11 +71,11 @@
   color: #fff;
   background-color: #0f62fe;
   display: grid;
+  align-content: center;
 }
 
 .bg-end-conteudo {
   align-self: center;
-  /* max-width: 1920px; */
 }
 
 
