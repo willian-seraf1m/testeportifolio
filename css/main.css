@@ -40,6 +40,7 @@
 
 .items {
   padding: 10px;
+  position: relative;
 }
 
 .items-text {
@@ -49,14 +50,19 @@
 
 .title-2 {
   font-family: 'IBM plex sans', sans-serif;
-  font-size: 10px;
+  font-size: 16px;
   position: absolute;
   top: 0px;
-  right: -15px;
+  right: -25px;
 }
 
 .swiper {
   max-width: 1200px;
+}
+
+.style-slide {
+  display: flex;
+  justify-content: center;
 }
 
 .bg-end {
@@ -69,7 +75,7 @@
 
 .bg-end-conteudo {
   align-self: center;
-  max-width: 1920px;
+  /* max-width: 1920px; */
 }
 
 
@@ -80,7 +86,7 @@
   color: #fff;
 }
 
-.footer > .container {
+.footer>.container {
   display: flex;
   justify-content: space-between;
 }
@@ -117,19 +123,12 @@
   position: sticky;
   top: 0;
   z-index: 201;
-  padding: 62px;
+  padding: 248px 62px;
 }
 
-
-@media (min-width: 1920px) {
-  .container {
-    max-width: 1920px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
+@media (max-width: 960px) {
+  .cursor {
+    display: none;
   }
 }
 
@@ -137,6 +136,7 @@
   .text-p {
     font-size: 32px;
   }
+
   .title {
     font-size: 16px;
   }
@@ -146,18 +146,13 @@
   .footer .text-f {
     display: none;
   }
+
+  .section-one,
+  .section-two,
+  .section-three,
+  .section-four,
+  .section-five {
+   padding: 128px 32px;
+  }
 }
 
-.section-one, .section-two, .section-three, .section-four, .section-five {
-  padding: 32;
-}
-
-/* @media (max-width: 500px) {
-  .text-p {
-    font-size: 20px;
-  }
-
-  .text-work {
-    margin-bottom: 25px;
-  }
-} */

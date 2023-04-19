@@ -3,22 +3,19 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .title {
   font-size: 32px;
   font-family: 'IBM plex sans';
+  font-weight: 500;
   margin: 10px 0px;
 }
 
 .text-p {
   font-size: 64px;
   font-family: 'IBM plex sans';
-}
-
-.container {
-  max-width: 1920px;
-  margin: 0 auto;
 }
 
 .conteudo {
@@ -43,6 +40,3 @@ button {
   mix-blend-mode: difference;
   scale: 4;
 }
-
-
-

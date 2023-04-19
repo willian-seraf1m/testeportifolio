@@ -6,12 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+  <link rel="shortcut icon" href="imagens/Logo.svg" type="image/x-icon">
+  <title>Told by Lucas</title>
 
   <!--carousel lib-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -21,11 +22,11 @@
     <div class="container-m">
       <div class="h-menu">
         <img src="imagens/Logo.svg" alt="logo" class="logo">
-        <button id="btn-close"><img src="imagens/excluir.png" alt="" class="img-menu"></button>
+        <button id="btn-close"><img src="imagens/Menu_close.svg" alt="" class="img-menu"></button>
       </div>
       <ul class="nav">
         <li><a href="https://www.linkedin.com/in/lucas-a-carvalho-4682b4177">Linkedin</a></li>
-        <li><a href="mailto:lucass_sc@gmail.com">E-mail</a></li>
+        <li><a href="mailto:lucass_sc@icloud.com">E-mail</a></li>
         <li><a href="https://www.behance.net/lucass_sc">Behance</a></li>
 
       </ul>
@@ -40,7 +41,7 @@
     <div class="header container">
       <img src="imagens/Logo.svg" alt="logo" class="logo">
       <nav id="nav">
-        <button id="btn-open"><img src="imagens/hamburger.png" alt=""></button>
+        <button id="btn-open"><img src="imagens/Menu_open.svg" alt=""></button>
       </nav>
     </div>
   </header>
@@ -73,51 +74,63 @@
         <div class="swiper-wrapper">
 
           <div class="swiper-slide">
-            <div class="items">
-              <span class="title-2">2022</span>
-              <p class="text-p items-text">BTG</p>
+            <div class="style-slide"> 
+              <div class="items">
+                <span class="title-2">2022</span>
+                <p class="text-p items-text">BTG</p>
+              </div>
             </div>
           </div>
 
           <div class="swiper-slide">
-            <div class="items">
-              <span class="title-2">2022</span>
-              <p class="text-p items-text">Amazon</p>
+            <div class="style-slide">
+              <div class="items">
+                <span class="title-2">2022</span>
+                <p class="text-p items-text">Amazon</p>
+              </div>
             </div>
           </div>
 
           <div class="swiper-slide">
-            <div class="items">
-              <span class="title-2">2023</span>
-              <p class="text-p items-text">Itaú</p>
+            <div class="style-slide">
+              <div class="items">
+                <span class="title-2">2023</span>
+                <p class="text-p items-text">Itaú</p>
+              </div>
             </div>
           </div>
 
           <div class="swiper-slide">
-            <div class="items">
-              <span class="title-2">2023</span>
-              <p class="text-p items-text">Tembici</p>
+            <div class="style-slide">
+              <div class="items">
+                <span class="title-2">2023</span>
+                <p class="text-p items-text">Tembici</p>
+              </div>
             </div>
           </div>
 
           <div class="swiper-slide">
-            <div class="items">
-              <span class="title-2">2023</span>
-              <p class="text-p items-text">Sanofi</p>
+            <div class="style-slide">
+              <div class="items">
+                <span class="title-2">2023</span>
+                <p class="text-p items-text">Sanofi</p>
+              </div>
             </div>
           </div>
 
           <div class="swiper-slide">
-            <div class="items">
-              <span class="title-2">2023</span>
-              <p class="text-p items-text">Nestlé </p>
+            <div class="style-slide">
+              <div class="items">
+                <span class="title-2">2023</span>
+                <p class="text-p items-text">Nestlé </p>
+              </div>
             </div>
           </div>
         </div>
     </section>
 
     <section class="bg-end text-p section-five">
-      <div class="bg-end-conteudo">
+      <div class="bg-end-conteudo ">
         <h1 class="title">Have an idea?</h1>
         <P class="text-p">Let's talk.</P>
       </div>
@@ -156,17 +169,24 @@
 
     //carrossel
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 30,
-      mousewheel: true,
-      keyboard: true,
       loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false
+      },
       breakpoints: {
-        700: {
-          slidesPerView: 5,
+        500: {
+          slidesPerView: 3,
+          setWrapperSize: true,
+        },
+        1100: {
+          slidesPerView: 4,
           setWrapperSize: true,
         }
-    }});
+      }
+    });
 
     //cursor
     const cursor = document.querySelector('.cursor');
